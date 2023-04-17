@@ -6,7 +6,7 @@
 }
 
 header {
-    background-color: #ADD8E6;
+    background-color: #255EE9;
     padding: 10px 10px;
  }
 
@@ -45,8 +45,9 @@ header {
 
 /* SECTION 1 */
 .section-1{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
     width: 100%;
-    background-image: url("j");
     padding: 75px;
 }
 
