@@ -8,21 +8,64 @@
 header {
     background-color: #255EE9;
     padding: 10px 10px;
+    color: white;
+ }
+
+ .link-header{
+    margin-left: 30px
  }
 
 .container-header {
     width: 70%;
     margin: 0 auto;
-    background-color: #DAA520;
+}
+
+.center, .end {
+    margin-top: 10px;
 }
 
 .row {
     display: flex;
     width: 100%;
+    margin-top: 10px;
 }
 
- .col-25 {
-    width: 25%;
+ .col-20 {
+    width: 20%;
+}
+
+.button{
+    border-radius: 30px;
+    padding: 6px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.button.white {
+    background-color: white;
+    color: black;
+}
+
+.button.white.big, .button.black, .button.violet {
+    padding: 15px;
+    font-size: 14px;
+}
+
+.button.black {
+    background-color: #23272A;
+}
+
+.button.violet {
+    background-color: #8EA1E1;
+    margin-top: 20px;
+    width: 20%;
+    align-self: center;
+    color: white
+}
+
+.nav-buttons {
+    margin-top: 40px;
 }
 
 .start{
@@ -33,13 +76,12 @@ header {
     text-align: end;
 }
 
-.col-50 {
-    width: 50%;
+.col-nav {
+    width: 60%;
     text-align: center;
 }
 
-.col-25, .col-50{
-    border: dashed black;
+.col-20, .col-nav{
     padding: 5px;
 }
 
@@ -49,18 +91,17 @@ header {
     background-size: cover;
     width: 100%;
     padding: 75px;
+    color: white;
 }
 
 .container-pink {
-    background-color: #EE82EE;
     margin: 0 auto;
-    border: dashed black;
-
     width: 60%;
 }
 
-.col-pink {
-    height: 300px;
+.col-full {
+    text-align: center;
+    line-height: 1.5;
 }
 
 /* SECTION 2 */
@@ -77,26 +118,18 @@ header {
 
 .col-40{
     width: 40%;
-    height: 350px;
-    background-color: #FFC0CB;
+    padding: 20px;
 }
 
 .col-60{
     width: 60%;
-    height: 350px;
-    background-color: #1E90FF;
-}
-
-.col-40, .col-60 {
-    border: dashed black;
-    padding: 5px;
-
+    display: flex;
 }
 
 /* >SECTION 3 */
 .section-3 {
     width: 100%;
-    background-color: #dadada;
+    background-color: #E5E5E5;
     padding: 75px;
 }
 
@@ -105,29 +138,34 @@ header {
 /* SECTION 5 */
 .section-5{
     width: 100%;
-    background-color: #dadada;
+    background-color: #E5E5E5;
     padding: 75px;
-
 }
 
 .container-green {
-    background-color: #228B22;
     margin: 0 auto;
-    border: dashed black;
-
     width: 80%;
 }
 
 .col-green {
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
 }
 
-/* SECTION 6 */
+/* FOOTER */
+
+footer {
+    background-color: #23272A;
+}
 
 .section-6 {
     width: 100%;
     background-color: #23272A;
     padding: 75px;
+    color: white;
+    line-height: 30px;
 }
 
 .container-5x {
@@ -137,45 +175,90 @@ header {
 
 .col-2of6{
     width: 33%;
-    height: 350px;
-    background-color: #F08080;
 }
 
 .col-1of6{
     width: calc(100% / 6);
-    height: 350px;
-    background-color: #20B2AA;
+    font-size: 14px;
+    font-weight: 600;
 }
 
-.col-1of6 {
-    border: dashed white;
+.col-2of6, .col-1of6 {
     padding: 5px;
+
 }
 
-.col-2of6 {
-    border: dashed black;
-    padding: 5px;
+footer h4, footer h3 {
+    color: #7289DA;
 }
-
-/* FOOTER */
-
-footer {
-    background-color: #23272A;
- }
 
 .container-footer {
     width: 72%;
     margin: 0 auto;
-    background-color: #7FFFD4;
     padding: 15px 0;
+    border-top: 1px solid #7289DA;
 }
 
 .row-footer{
     justify-content: space-between;
 }
 
-button {
-    border: dashed;
-    padding: 5px;
-    background-color: lightgray;
+/* TESTO E IMMAGINI */
+
+h2{
+    font-size: 40px;
 }
+
+h3 {
+    font-size: 25px;
+}
+
+h2, h3, h4 {
+    font-weight: 800;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.head-text{
+    margin: 35px 30px 20px;
+}
+
+.main-p {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.flag {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.lang {
+    margin: 15px 0;
+}
+
+.wave-1 {
+    width: 100%;
+    opacity: 0.1;
+    display: flex;
+}
+
+.wave-2 {
+    width: 100%;
+    transform: scaleY(-1);
+    opacity: 0.1;
+    display: flex;
+}
+
+.starred {
+    background-image: url(../img/stars.svg);
+    background-size: cover;
+    margin: auto;
+} /* ??? */
+
+i {
+    margin: 10px;
+}
+
